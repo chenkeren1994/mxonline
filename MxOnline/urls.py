@@ -32,6 +32,8 @@ urlpatterns = [
 
     url('^$', IndexView.as_view(),name="index"),
 
+    # url('^login/$',LoginUnSafeView.as_view(),name="login"),
+
     url('^login/$',LoginView.as_view(),name="login"),
 
     url('^logout/$',LogoutView.as_view(),name="logout"),
